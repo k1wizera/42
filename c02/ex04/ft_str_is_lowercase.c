@@ -1,4 +1,4 @@
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
@@ -7,10 +7,7 @@ int	ft_str_is_alpha(char *str)
 	{
 		if ((str[i] < 'a') || (str[i] > 'z'))
 		{
-			if ((str[i] < 'A') || (str[i] > 'Z'))
-			{
-				return (0);
-			}
+			return (0);
 		}
 		i++;
 	}
